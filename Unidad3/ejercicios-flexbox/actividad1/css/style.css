@@ -1,0 +1,25 @@
+body{
+    padding: 2%;
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: salmon;
+}
+.container-flex{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+
+    flex-flow: row wrap; /*combinacion de flex-direction y flex-wrap*/
+}
+
+.field-input, .textarea{
+    margin: 0 0.5em 1em 0;
+    padding: .5em 1em;
+}
+
+.field-input{
+    flex: 40%;
+}
+.textarea{
+    width: 100%;
+}

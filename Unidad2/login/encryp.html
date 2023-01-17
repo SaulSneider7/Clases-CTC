@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur </h1>
+    <p>bienvenido <span id="dev"></span></p>
+    <label for="mensaje">Mensaje:</label>
+    <input type="text" id="mensaje"><br><br>
+
+    <button onclick="encriptar()">encriptar</button>
+    <br><br>
+   
+
+    <label for="msjEncrip">Mensaje Encriptado:</label>
+    <span id="msjEncrip"></span>
+    <br> <br>  <hr> <br><br>
+
+    <label for="msgCodigo">Codigo del mensaje:</label>
+    <input type="text" id="msgCodigo">
+    <br><br>
+    <button onclick="desencriptar()">Desencriptar</button>
+    <br><br>
+
+    <label for="msjReal">Mensaje Real: </label>
+    <span id="msjReal"></span>
+    <br><br>
+
+    <span id="error"></span>
+    <script src="js/encryp.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* *{
+    background: bisque;
+} */
+
+.alerta{
+    background-color: red;
+    color: white;
+}
+span{
+    background-color: blue;
+    color: aliceblue;
+}

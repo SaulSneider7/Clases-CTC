@@ -1,0 +1,139 @@
+
+
+
+
+/*****//*****/
+/**código 2**/
+/*Pueden las estudiantes pueden copiar lo anterior y hacer esta de abajo.
+No es necesario que vuelvan a codificar todo desde cero. Tomaria más tiempo.*/
+/*
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/
+/*****//*****/
+/*row, column,row-reverse, column-reverse */
+/*
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.flex-container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/
+/*****//*****/
+/*actividad */
+/*nowrap wrap wrap-reverse;*/
+/*
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/
+/*****//*****/
+/*
+stretch | flex-start | flex-end | center | baseline
+*/
+/*
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items:flex-end;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+*/
+/*****//*****/
+
+/****Actividad adicional***/
+/*
+fuente:  https://css-tricks.com/snippets/css/a-guide-to-flexbox/#background
+*/
+/* .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+} */
+
+/* .flex-item {
+  width: 200px;
+  height: 150px;
+  line-height: 150px;
+} */
+/* .gato{
+  width: 200px;
+  height: 150px;
+
+} */
+
+/* .flex-container{
+  border: 2px solid black;
+  display: flex;
+}
+
+.flex-container>div{
+  background-color: aqua;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 75px;
+} */
+
+
+.flex-container{
+  border: 2px solid black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  
+
+}
+.flex-container > div{
+  border: 2px solid red;
+  padding: 20px;
+  background-color: aqua;
+}
