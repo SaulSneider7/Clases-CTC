@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.blog{
+    background-color: rgba(0, 0, 0, 0.646);
+    padding: 100px 30px;
+}
+
+.blog h1{
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 50px;
+}
+
+.flex-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-hijo{
+    margin: 5px;
+    width: 250px;
+    padding: 15px;
+}
+.info{
+    padding: 15px;
+    background-color: #ffff;
+}
