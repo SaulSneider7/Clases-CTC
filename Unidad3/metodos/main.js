@@ -6,7 +6,7 @@ let array = [1, 2, 3];
 //Agrega un valor final
 array.push(5);
 
-// console.log(array);
+console.log(array);
 
 
 
@@ -16,7 +16,7 @@ array.push(5);
 
 array.pop();
 
-// console.log(array);
+console.log(array);
 
 // ==========================
 
@@ -28,8 +28,8 @@ array.pop();
 // **** Metodo Unshift ****
 
 //Agrega un valor al inicio
-array.unshift(5);
-// console.log(array);
+array.unshift(0);
+console.log(array);
 
 
 
@@ -37,27 +37,31 @@ array.unshift(5);
 
 //Elimina el primer valor de un array
 array.shift();
-// console.log(array);
+console.log(array);
+
 
 
 // APLICANDO LO APRENDIDO 3
 
 // **** Metodo Slice() ****
-let array2 = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+let array2 = [9, 8, 0, 2, 6, 1, 3, 11, 4];
 
-// console.log(array2);
+console.log(array2);
 
-// console.log(array2.slice(0,6));
+console.log(array2.slice(3,7));
 
-// console.log (array2.slice(4,7));
+console.log (array2.slice(4,7));
 
 
 // **** Metodo splice() ****
 let array3 = ['pedro', 'juan', 'maria', 'andrea','saul'];
+console.log(array3);
 
-array3.splice(1,2,'karina');
+array3.splice(2, 2, 'karina');
+console.log(array3);
 
-// console.log(array3);
+
+
 
 
 // APLICANDO LO APRENDIDO 4
