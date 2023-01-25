@@ -24,28 +24,32 @@
 // Aplicando lo aprendido3
 // =========Includes===========
 
-console.log([1, 2, 3].includes(2));
-console.log([1, 2, 3].includes(4));
-console.log([1, 2, 3].includes(3, 3));
-console.log([1, 2, 3].includes(3, -1));
-console.log([1, 2, NaN].includes(NaN));
+// console.log([1, 2, 3].includes(2));
+// console.log([1, 2, 3].includes(4));
+// console.log([1, 2, 3].includes(3, 3));
+// console.log([1, 2, 3].includes(3, -1));
+// console.log([1, 2, NaN].includes(NaN));
 
 // Aplicando lo aprendido4
 // =========Find===========
 
+let array = [5, 8, 13, 21, 34];
 
-function dev(element, index, array) {
-    let i = 2;
-    while(i <= Math.sqrt(element)){
-        if (element % i++ <1){
-            return false;
-        }
-    }
-    return element > 1;
+// function buscar(item) {
+//     return item > 20;
+// }
+
+let item = array.find(a => a>20)
+console.log(item);
+
+
+
+// Aplicando lo aprendido5
+// =========Filter===========
+
+function mayor(a) {
+    return a >= 10;
 }
 
-console.log([4, 5, 8, 12].find(dev)); 
-
-
-
-
+let filtrado = [12, 5, 8, 130, 44].filter(mayor);
+console.log(filtrado);
