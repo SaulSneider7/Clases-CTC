@@ -60,7 +60,7 @@ let disco2 = {
 }
 console.log(disco2);
 
-// ==== Contructor ====
+// ==== Constructor ====
 function Disco(artista, album, año){
     this._artista = artista;
     this._album = album;
