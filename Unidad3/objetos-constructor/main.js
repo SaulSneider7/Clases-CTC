@@ -51,7 +51,6 @@ let disco1 = {
     album: 'Exitos',
     año: 2012
 }
-
 console.log(disco1);
 
 let disco2 = {
@@ -59,14 +58,14 @@ let disco2 = {
     album: 'Magic',
     año: 2020
 }
-
 console.log(disco2);
 
+// ==== Contructor ====
 function Disco(artista, album, año){
     this._artista = artista;
     this._album = album;
     this._año = año;
 }
-
+// ====================
 let disco3 = new Disco('Benito', 'abc',2022);
 console.log(disco3);
