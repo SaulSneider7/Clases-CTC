@@ -9,40 +9,40 @@ $(document).ready(function(){
     //.hide
     $("h3").hide();
 
-    $("button").click(function(){
+    $("button").click(function(evento){
         alert("hola");
     });
 
 
     //.click
-    $("#btnOcultar").click(function(){
+    $("#btnOcultar").click(function(evento){
         $("h2").hide();
     });
     //.dblclick
-    $("#btnMostrar").dblclick(function(){
+    $("#btnMostrar").dblclick(function(evento){
         $("h2").show();
     });
 
     //mouseenter - mouseleave  -> :Hover
-    $("#primero").mouseenter(function(){
+    $("#primero").mouseenter(function(evento){
         $("#tercero").hide('slow');
     });
-    $("#primero").mouseleave(function(){
+    $("#primero").mouseleave(function(evento){
         $("#tercero").show("slow");
     });
 
-    $("#primero").mouseenter(function(){
+    $("#primero").mouseenter(function(evento){
         $("#tercero").fadeOut();
     });
-    $("#primero").mouseleave(function(){
+    $("#primero").mouseleave(function(evento){
         $("#tercero").fadeIn();
     });
 
 
-    $("#primero").mouseenter(function(){
+    $("#primero").mouseenter(function(evento){
         $("#tercero").slideDown();
     });
-    $("#primero").mouseleave(function(){
+    $("#primero").mouseleave(function(evento){
         $("#tercero").slideUp();
     });
 });
