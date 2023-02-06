@@ -19,11 +19,11 @@ function MostrarTexto() {
 
 $(document).ready(function(){
     
-    $("#btnOcultar2").on("click", function(){
+    $("#btnOcultar2").on("click", function(evento){
         $("#parrafo").hide('slow');
     });
 
-    $("#btnMostrar2").click(function(){
+    $("#btnMostrar2").click(function(evento){
         $("#parrafo").show('slow');
     });
 
