@@ -13,7 +13,6 @@ $(document).ready(function(){
         alert("hola");
     });
 
-
     //.click
     $("#btnOcultar").click(function(){
         $("h2").hide();
