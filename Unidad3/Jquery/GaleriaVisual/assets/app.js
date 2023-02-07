@@ -4,20 +4,30 @@ function linkgenerado(){
     return`https://picsum.photos/id/${id}/info`; 
 }
 
-
 //Manipulacion al DOM = HTML
 function abc(data){
     let div = $("<div></div>");
+    //Agregar clase addClass
+    div.addClass("card");
+    
     let img = $("<img></img>");
+    //Agregar clase addClass
+    img.addClass("card-img");
 
     img.attr("src",data.download_url);
 
     div.append(img);
 
     let autor = $("<h3></h3>");
-    autor.attr(data.author);
+    //Agregar clase addClass
+    autor.addClass("card-title")
+    autor.append(data.author);
 
     div.append(autor);
+
+    let p = $("<p></p>");
+    p.append(data.id);
+    div.append(p);
 
     $('#imagenes-contenedor').append(div);
 }

@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+}
+
+.flex-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.card-img{
+    width: 100%;    
+}
+
+.card-title{
+    text-align: center;
+}
