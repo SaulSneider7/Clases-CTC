@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Galeria ::.</title>
+    <link rel="stylesheet" href="assets/stylos.css">
+    <link rel="stylesheet" href="assets/pokemon.css">
+    <!-- Query CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="nav_contenedor">
+            <div class="nav_titulo">
+                <img src="img/logo.webp" alt="logo">
+            </div>
+            <ul class="nav_ul">
+                <li class="nav_item">
+                    <a class="nav_item_link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_item_link" href="pokemon.html">Pokemones</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#">Contacto</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section_1">
+            <!-- Inicio slider -->
+            <div class="div_slider">
+                <img name="slider" class="slider">
+            </div>
+            <!-- fin slider -->
+        </section>
+
+        <div id="imagenes-contenedor" class="flex-contenedor">
+            <!-- Aqui se van agregar las imagenes d la api -->
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer_p">&copy;2023 Derechos de author reservados</p>
+    </footer>
+
+    <script src="assets/index.js"></script>
+    <script src="assets/pokemon.js"></script>
+</body>
+</html>

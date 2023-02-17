@@ -1,0 +1,62 @@
+*{
+    background-color: rgb(210, 255, 196);
+}
+/* Header */
+.nav_contenedor{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    
+}
+.nav_titulo>img{
+    height: 100px;
+}
+.nav_ul{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    align-items: center;
+}
+.nav_item_link{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+section{
+    margin: 50px;
+}
+/* ====== Slider ===== */
+.div_slider{
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    
+}
+.slider{
+    width: 100%;
+    height: 100%;
+}
+/*====== fin Slider ======*/
+
+/* Section1 */
+summary{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex>div{
+    width: 200px;
+}
+.section3{
+    margin-top: 100px;
+}
+.footer_p{
+    color: blue;
+}
+
