@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "name": "Aretes en oro blanco de 18K con esmeralda y brillante",
+        "codigo": "1EMAR040075",
+        "descrip": "Aretes en oro blanco de 18K con esmeralda de 0.90 carats en total y brillante de 0.08 carats en total.",
+        "price": "$1,660.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1EMAR040075_600x.jpg?v=1605194109"
+    },
+    {
+        "id": 2,
+        "name": "Aretes en oro amarillo de 18K mariposa volando",
+        "codigo": "1XXAR010669",
+        "descrip": "Aretes en oro amarillo de 18K mariposa volando 3 niveles.",
+        "price": "$1,230.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1XXAR010669_600x.jpg?v=1601650708"
+    },
+    {
+        "id": 3,
+        "name": "Placa rectangular en oro amarillo de 18K brilloso",
+        "codigo": "4XXDJ01447",
+        "descrip": "Placa rectangular en oro amarillo de 18K brilloso, medidas: 2.5 x 1.5cm / espesor 0.65mm *No incluye cadena",
+        "price": "$1,100.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4XXDJ01447_600x.jpg?v=1592888499"
+    },
+    {
+        "id": 4,
+        "name": "Collar en oro amarillo de 18K estrella con nácar",
+        "codigo": "1NACO010005",
+        "descrip": "Collar en oro amarillo de 18K estrella con nácar. Medidas: estrella 15x13mm/ largo 44cm",
+        "price": "$670.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1NACO010005_600x.jpg?v=1601317500"
+    },
+    {
+        "id": 5,
+        "name": "Collar en oro amarillo de 18K emoji ¨Kiss¨",
+        "codigo": "1DICO010105",
+        "descrip": "Collar en oro amarillo de 18K emoji ¨Kiss¨ con brillante de 0.01 carats en total. Medidas: largo 45cm / emoji 1.2cm ",
+        "price": "$915.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1DICO010105_600x.jpg?v=1593451365"
+    },
+    {
+        "id": 6,
+        "name": "Dije en oro amarillo de 18K en forma de corazon",
+        "codigo": "4RUDJ01017",
+        "descrip": "Dije en oro amarillo de 18K en forma de corazón. Es reversible, por un lado dice I love you y por el otro lado hay un rubí al centro de 0.03 carats.",
+        "price": "$385.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4RUDJ01017_600x.jpg?v=1592512737"
+    },
+    {
+        "id": 7,
+        "name": "Dije en oro amarillo de 18K letra K",
+        "codigo": "4DIDJ01268",
+        "descrip": "Dije en oro amarillo de 18K letra K con un brillante de 0.0075 carats en total. Medida: 1.5cm con loop",
+        "price": "$290.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIDJ01268_600x.jpg?v=1607558720"
+    },
+    {
+        "id": 8,
+        "name": "Cintillo en oro blanco de 18K con brillantes",
+        "codigo": "1DIAN040822",
+        "descrip": "Cintillo en oro blanco de 18K con brillantes con 0.30 carats en total.",
+        "price": "$1,300.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1DIAN040822_600x.jpg?v=1606322176"
+    },
+    {
+        "id": 9,
+        "name": "Cintillo medio rivière en oro amarillo de 18K con zafiros",
+        "codigo": "4ZAAN01039",
+        "descrip": "Cintillo medio rivière cintillo en oro amarillo de 18K con zafiros de 0.45 carats en total.",
+        "price": "$1,560.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4ZAAN01039_600x.jpg?v=1592599593"
+    },
+    {
+        "id": 10,
+        "name": "Dije en oro blanco de 18K redondo con esmeraldas y brillantes",
+        "codigo": "1EMDJ04007",
+        "descrip": "Dije en oro blanco de 18K redondo con esmeraldas de 0.77 carats en total y brillantes de 0.41 carats en total en líneas diagonales",
+        "price": "$3,700.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1EMDJ04007_600x.jpg?v=1616110069"
+    },
+    {
+        "id": 11,
+        "name": "Aretes roseta en oro amarillo de 18K con brillantes",
+        "codigo": "4BIAR010019",
+        "descrip": "Aretes roseta en oro amarillo de 18K con brillantes de 0.56 carats en total. Cantidad: 14 brillantes",
+        "price": "$2,040.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1BIAR010067_600x.jpg?v=1592521428"
+    },
+    {
+        "id": 12,
+        "name": "Aretes en oro blanco de 18K flor con rubís y brillantes",
+        "codigo": "1RUAR040087",
+        "descrip": "Aretes en oro blanco de 18K flor con rubís de 1.80 carats en total y brillantes de 0.06 carats en total.",
+        "price": "$1,590.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1RUAR040087_600x.jpg?v=1616685817"
+    },
+    {
+        "id": 13,
+        "name": "Aretes en oro amarillo de 18K",
+        "codigo": "4CDAR01002",
+        "descrip": "Aretes en oro amarillo de 18K con calcedonia rodeado de brillantes con 0.40 carats en total y perla colgante.",
+        "price": "$1,590.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4CDAR01002_600x.jpg?v=1606328051"
+    },
+    {
+        "id": 14,
+        "name": "Anillo en oro blanco de 18K con rubís y brillantes",
+        "codigo": "1RUAN04126",
+        "descrip": "Anillo en oro blanco de 18K con rubís de 0.26 carats en total y brillantes biselados de 0.10 carats en total.",
+        "price": "$1,720.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1RUAN04126_600x.jpg?v=1613666422"
+    },
+    {
+        "id": 15,
+        "name": "Aretes en oro amarillo de 18K corazón con brillantes",
+        "codigo": "1DIAR011040",
+        "descrip": "Aretes en oro amarillo de 18K corazón con brillantes 0.23 carats en total.",
+        "price": "$840.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1BIAR010065_600x.jpg?v=1599841826"
+    },
+    {
+        "id": 16,
+        "name": "Dije en oro blanco de 18K rombo con brillantes",
+        "codigo": "1DIDJ04161",
+        "descrip": "Dije en oro blanco de 18K rombo con brillantes de 0.30 carats en total. Cantidad: 9 brillantes",
+        "price": "$1,020.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1DIDJ04161_2048x.jpg?v=1606325954"
+    },
+    {
+        "id": 17,
+        "name": "Aretes en oro amarillo de 18K osito con corazon de nactar",
+        "codigo": "1NAAR010008",
+        "descrip": "Aretes en oro amarillo de 18K osito con corazón de nácar. Medidas: 10x8mm * Aretes con palito y broche estándar.",
+        "price": "$425.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1NAAR010008_600x.jpg?v=1610404725"
+    },
+    {
+        "id": 18,
+        "name": "Aretes en oro rosado de 18K con granate",
+        "codigo": "1GRAR100001",
+        "descrip": "Aretes en oro rosado de 18K con granate de 3.0 carats en total. Medidas: granate 10.5x5.5mm",
+        "price": "$745.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1GRAR100001_600x.jpg?v=1601652509"
+    },
+    {
+        "id": 19,
+        "name": "Dije en oro amarillo de 18K mapa Perú",
+        "codigo": "4DIDJ010363",
+        "descrip": "Bret",
+        "price": "$395.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIDJ010363_600x.jpg?v=1605310312"
+    },
+    {
+        "id": 20,
+        "name": "Aretes en oro amarillo de 18K rainbow",
+        "codigo": "1DVAR010123",
+        "descrip": "Aretes en oro amarillo de 18K rainbow rectangular con piedras preciosas de diversos colores baguette con 2.7 carats en total.",
+        "price": "$985.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1DVAR010123_600x.jpg?v=1614023129"
+    },
+    {
+        "id": 21,
+        "name": "Anillo de Compromiso modelo catalina",
+        "codigo": "4BIAN04561",
+        "descrip": "Anillo de Compromiso en oro blanco de 18K modelo catalina con brillante central de 0.25 carats y 17 brillantes laterales de 0.17 carats en total.",
+        "price": "$2,688.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4BIAN04462_600x.jpg?v=1593493288"
+    },
+    {
+        "id": 22,
+        "name": "Anillo de Compromiso modelo catalina",
+        "codigo": "4DIAN10222",
+        "descrip": "Anillo de Compromiso en oro rosado de 18K modelo catalina con brillante de 0.25 carats y 17 brillantes laterales de 0.17 carats en total.",
+        "price": "$1,899.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIAN10196_600x.jpg?v=1593491624"
+    },
+    {
+        "id": 23,
+        "name": "Dije MOM en oro amarillo de 18K",
+        "codigo": "4DIDJ010379",
+        "descrip": "Dije MOM en oro amarillo de 18K con brillantes al centro de 0.05 carats en total.",
+        "price": "$565.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIDJ010379_600x.jpg?v=1618442739"
+    },
+    {
+        "id": 24,
+        "name": "Dije en oro amarillo de 18K letra N",
+        "codigo": "4DIDJ01265",
+        "descrip": "Dije en oro amarillo de 18K letra N con un brillante de 0.01 carats en total. Medida: 1.5cm con loop",
+        "price": "$290.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIDJ01265_600x.jpg?v=1597096753"
+    },
+    {
+        "id": 25,
+        "name": "Collar en oro amarillo de 18K con tus iniciales favoritas",
+        "codigo": "4RUCO010003",
+        "descrip": "Collar en oro amarillo de 18K con tus iniciales favoritas y corazón central con rubí de 0.01 carats en total.",
+        "price": "$820.00 USD",
+        "img": "hildegard.org"
+    },
+    {
+        "id": 26,
+        "name": "Leanne Graham",
+        "codigo": "00",
+        "descrip": "Bret",
+        "price": "05",
+        "img": "hildegard.org"
+    },
+    {
+        "id": 27,
+        "name": "Leanne Graham",
+        "codigo": "00",
+        "descrip": "Bret",
+        "price": "05",
+        "img": "hildegard.org"
+    },
+    {
+        "id": 28,
+        "name": "Dije en oro amarillo de 18K letra J",
+        "codigo": "4DIDJ01270",
+        "descrip": "Dije en oro amarillo de 18K letra J con un brillante de 0.01 carats en total. Medida: 1.2x1.1cm con loop",
+        "price": "$290.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIDJ01270_600x.jpg?v=1597096869"
+    },
+    {
+        "id": 29,
+        "name": "Dije en oro amarillo de 18K letra A",
+        "codigo": "4DIDJ01250",
+        "descrip": "Dije en oro blanco de 18K letra A con un brillante de 0.01 carats en total. Medida: 1.5cm con loop",
+        "price": "$290.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/4DIDJ01250_600x.jpg?v=1596940642g"
+    },
+    {
+        "id": 30,
+        "name": "Aretes en oro rosado de 18K corazón con nácar colgante",
+        "codigo": "1NAAR100001",
+        "descrip": "Aretes en oro rosado de 18K corazón con nácar colgante. Medidas: corazón 12x10mm",
+        "price": "$1,010.00 USD",
+        "img": "https://cdn.shopify.com/s/files/1/0407/8020/2147/products/1NAAR100001_600x.jpg?v=1601932370"
+    }
+]
