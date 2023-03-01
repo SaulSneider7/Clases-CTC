@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
     const firebaseConfig = {
         apiKey: "AIzaSyCZkD-wjeZ0rZ1lPr4dWNb5jNhyyooiIuo",
         authDomain: "unidad4-84750.firebaseapp.com",
@@ -14,7 +16,10 @@ $(document).ready(function () {
     const app = firebase.initializeApp(firebaseConfig);
     console.log(app);
 
-    //****** Registrar Usuarios ******
+
+    //==============================
+    //Registrar Usuarios 
+    //============================== 
     //Seleccionando el boton registrar
     $("#btn-registrar").click(function () {
         //Capturar el email y el password
@@ -40,7 +45,11 @@ $(document).ready(function () {
             });
     });
 
+    //=========================================
     // Ingresar con nuestro Correo Registrado
+    //=========================================
+
+   
     $("#btn-iniciar").click(function () {
         //Capturar el email y el password
         let correo = $("#email").val();
@@ -61,12 +70,19 @@ $(document).ready(function () {
             });
     });
 
+    //==============================
     //Cerrar Sesion
+    //============================== 
+    
     $("#salir").click(function () {
         firebase.auth().signOut().then(() => {
             // Sign-out successful.
             window.location.href = "index.html";
         })
     });
+
+
+
+
 });
 
