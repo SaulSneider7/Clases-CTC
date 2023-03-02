@@ -33,7 +33,11 @@ $(document).ready(function () {
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 // Signed in
-                alert('Creaste una cuenta exitosamente');
+                Swal.fire(
+                    'Se logro!!',
+                    'Creaste una cuenta exitosamente!',
+                    'success'
+                  )
                 // ...
             })
             .catch((error) => {
@@ -41,7 +45,11 @@ $(document).ready(function () {
                 var errorMessage = error.message;
                 // ..
                 console.log(errorCode, errorMessage);
-                alert('ocurrio un error al crear tu cuenta');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ocurrio un error!',
+                  })
             });
     });
 
@@ -58,8 +66,19 @@ $(document).ready(function () {
         firebase.auth().signInWithEmailAndPassword(correo, pass)
             .then((userCredential) => {
                 // Signed in
-                // alert("Ingresaste");
-                window.location.href = 'home.html';
+                Swal.fire({
+                    title: '¡Alerta!',
+                    text: '¿Está seguro de que desea ir a la página siguiente?',
+                    icon: 'success',
+                    confirmButtonText: 'Ok',
+                    allowOutsideClick: true // permite cerrar la alerta haciendo clic fuera del modal
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      window.location.href = "home.html"; // redirecciona a otra página
+                    }
+                  });
+                  
+                // window.location.href = 'home.html';
                 // ...
             })
             .catch((error) => {
