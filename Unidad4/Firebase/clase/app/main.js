@@ -37,7 +37,7 @@ $(document).ready(function () {
                     'Se logro!!',
                     'Creaste una cuenta exitosamente!',
                     'success'
-                  )
+                )
                 // ...
             })
             .catch((error) => {
@@ -49,7 +49,7 @@ $(document).ready(function () {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Ocurrio un error!',
-                  })
+                })
             });
     });
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
     // Ingresar con nuestro Correo Registrado
     //=========================================
 
-   
+
     $("#btn-iniciar").click(function () {
         //Capturar el email y el password
         let correo = $("#email").val();
@@ -72,12 +72,12 @@ $(document).ready(function () {
                     icon: 'success',
                     confirmButtonText: 'Ok',
                     allowOutsideClick: true // permite cerrar la alerta haciendo clic fuera del modal
-                  }).then((result) => {
+                }).then((result) => {
                     if (result.isConfirmed) {
-                      window.location.href = "home.html"; // redirecciona a otra página
+                        window.location.href = "home.html"; // redirecciona a otra página
                     }
-                  });
-                  
+                });
+
                 // window.location.href = 'home.html';
                 // ...
             })
@@ -92,16 +92,45 @@ $(document).ready(function () {
     //==============================
     //Cerrar Sesion
     //============================== 
-    
+
     $("#salir").click(function () {
         firebase.auth().signOut().then(() => {
             // Sign-out successful.
-            window.location.href = "index.html";
+            console.log('cerraste sesion');
+            // window.location.href = "index.html";
         })
     });
 
+    //==============================
+    //Iniciar Sesion con Google
+    //============================== 
 
+    var provider = new firebase.auth.GoogleAuthProvider();
 
+    $("#btn-google").click(function () {
+        firebase.auth()
+            .signInWithPopup(provider)
+            .then((result) => {
+                /** @type {firebase.auth.OAuthCredential} */
+                var credential = result.credential;
 
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                var token = credential.accessToken;
+                // The signed-in user info.
+                var user = result.user;
+                // ...
+                console.log('ingresaste');
+            }).catch((error) => {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // The email of the user's account used.
+                var email = error.email;
+                // The firebase.auth.AuthCredential type that was used.
+                var credential = error.credential;
+                // ...
+                console.log('error');
+            });
+    })
 });
 
