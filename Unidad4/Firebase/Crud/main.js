@@ -1,5 +1,13 @@
-import { GuardarTarea } from "./app/firebase.js";
-window.addEventListener("DOMContentLoaded", () => {});
+import { GuardarTarea, ListarTareas } from "./app/firebase.js";
+
+
+window.addEventListener("DOMContentLoaded", async () => {
+    let lista = await ListarTareas();
+    // console.log(lista);
+    lista.forEach((doc) => {
+        console.log(doc);
+    });
+});
 
 let formulario = document.getElementById("formulario");
 
@@ -10,4 +18,6 @@ formulario.addEventListener("submit", (e) => {
   // console.log(titulo, descripcion);
 
   GuardarTarea(titulo, descripcion);
+
+  formulario.reset(); //limpiamos el formulario
 });
