@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     let lista = await ListarTareas();
     // console.log(lista);
     lista.forEach((doc) => {
-        console.log(doc.data()._descripcion);
+        console.log(doc);
     });
 });
 
