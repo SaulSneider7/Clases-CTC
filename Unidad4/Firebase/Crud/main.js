@@ -5,6 +5,7 @@ let contenedor = document.getElementById("contenedor");
 window.addEventListener("DOMContentLoaded", async () => {
   // let lista = await ListarTareas();
   // console.log(lista);
+
   OnListarTareas((lista) => {
     let html = "";
 
@@ -23,7 +24,6 @@ window.addEventListener("DOMContentLoaded", async () => {
       contenedor.innerHTML = html;
     });
   });
-  
 });
 
 let formulario = document.getElementById("formulario");

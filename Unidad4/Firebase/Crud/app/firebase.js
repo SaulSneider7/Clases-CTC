@@ -6,7 +6,7 @@ import {
   collection, //se crea la base de datos
   addDoc, //añadir datos
   getDocs, //traer datos
-  onSnapchot //Tiempo real
+  onSnapshot //Tiempo real
 } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -44,4 +44,4 @@ export const GuardarTarea = (titulo, descripcion) => {
 export const ListarTareas = () => getDocs(collection(db,"tareas"));
 // console.log('listamos las tareas');
 
-export const OnListarTareas = (callback) => onSnapchot(collection(db,"tareas"),callback)
+export const OnListarTareas = (callback) => onSnapshot(collection(db,"tareas"),callback)
