@@ -1,12 +1,23 @@
 import { GuardarTarea, ListarTareas } from "./app/firebase.js";
 
+let contenedor = document.getElementById("contenedor");
 
 window.addEventListener("DOMContentLoaded", async () => {
-    let lista = await ListarTareas();
-    // console.log(lista);
-    lista.forEach((doc) => {
-        console.log(doc);
-    });
+  let lista = await ListarTareas();
+  // console.log(lista);
+  lista.forEach((doc) => {
+    console.log(doc.data()._titulo);
+
+    let tarea = doc.data()._titulo;
+    let html = `
+      <div>
+        <h3 id='aaa'></h3>
+      </div>
+    `
+
+    
+    contenedor.innerHTML = tarea;
+  });
 });
 
 let formulario = document.getElementById("formulario");
@@ -21,3 +32,5 @@ formulario.addEventListener("submit", (e) => {
 
   formulario.reset(); //limpiamos el formulario
 });
+
+
