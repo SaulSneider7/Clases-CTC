@@ -1,0 +1,4 @@
+.fondo-imagen{
+    background-image: url(portada.jpg);
+    background-size: cover;
+}
