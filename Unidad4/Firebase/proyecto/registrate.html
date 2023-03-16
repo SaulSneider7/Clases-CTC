@@ -5,16 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Cuenta</title>
+    <!-- stylos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <h1>CREA UNA NUEVA CUENTA</h1>
+
+    <label for="">Nombre:</label>
+    <input id="reg_nombre" type="text"><br>
+
     <label for="">Correo:</label>
-    <input type="text"><br>
+    <input id="correo" type="text"><br>
 
     <label for="">Password</label>
-    <input type="password">
+    <input id="password" type="password">
 
-    <button>Registrate</button><br>
+    <button id="registrarse">Registrate</button><br>
     <a href="index.html">cancelar</a>
+
+    <!-- JS de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN de Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- CND PARA INICAR FIREBASE -->
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <!-- CDN PARA UASR AUTH DE FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <!-- CDN PARA USAR FIRESTORE -->
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- JS propio -->
+    <script src="assets/main.js"></script>
 </body>
 </html>
