@@ -40,6 +40,7 @@ $(document).ready(function () {
         var user = userCredential.user;
         // ...
         console.log("se creo tu cuenta correctamente");
+       
         //usamos la funcion creada para guardar el nombre
         addNombre(nombre);
       })
@@ -113,6 +114,7 @@ $(document).ready(function () {
 
   // MANEJO DE SESIONES
   firebase.auth().onAuthStateChanged((user) => {
+    window.location.reload;
     if (user) {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
@@ -123,6 +125,7 @@ $(document).ready(function () {
       // console.log(user);
       console.log(email, " - ", usuario);
       obtenerDatos()
+      
       // ...
     } else {
       // User is signed out
@@ -166,6 +169,7 @@ $(document).ready(function () {
       })
       .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
+        window.location.reload(); //recarga pag
       })
       .catch((error) => {
         console.error("Error adding document: ", error);
@@ -219,6 +223,13 @@ $(document).ready(function () {
     db.collection("posteos").get().then((querySnapshot) => {
       mostrarDatos(querySnapshot.docs);
     });
-    
+  }
+
+  function actualizarDato(id) {
+    db.collection("posteos").doc(id).get().then((doc)=>{
+      //Si exite el post se mostara en el form
+      let post = doc.data();
+
+    });
   }
 });
