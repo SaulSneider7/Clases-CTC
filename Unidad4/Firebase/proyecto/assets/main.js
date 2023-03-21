@@ -122,6 +122,7 @@ $(document).ready(function () {
       // console.log(email," - ", usuario," - ", uid);
       // console.log(user);
       console.log(email, " - ", usuario);
+      obtenerDatos()
       // ...
     } else {
       // User is signed out
@@ -179,17 +180,18 @@ $(document).ready(function () {
       let html = "";
       data.forEach((doc) => {
         var post = doc.data();
+        console.log("post - ",post);
         var div = ``;
-        if (user.uid == post.idUser) {
+        if (user.uid == post._idUser) {
           div = `
-          <div class="card bg-dark text-white  mt-3 mx-auto" style="max-width: 800px;">
+          <div class="card mt-3 mx-auto" style="max-width: 800px;">
             <div class="card-body">
-              <p>${post.mensaje}</p>
-              <p>Publicado por ${post.userName}</p>
-              <button data-id="${doc.id}" class="btn btn-success btn-edit-post bi bi-pencil">
+              <p>${post._publicacion}</p>
+              <p>Publicado por ${post._nombreUser}</p>
+              <button data-id="${doc._idUser}">
                 Editar
               </button>
-              <button data-id="${doc.id}" class="btn btn-danger btn-delete-post bi bi-trash">
+              <button data-id="${doc._idUser}">
                 Eliminar
               </button>
             </div>
@@ -199,8 +201,8 @@ $(document).ready(function () {
           div = `
           <div class="card bg-dark text-white  mt-3 mx-auto" style="max-width: 800px;">
             <div class="card-body">
-              <p>${post.mensaje}</p>
-              <p>Publicado por ${post.userName}</p>
+              <p>${post._publicacion}</p>
+              <p>Publicado por ${post._nombreUser}</p>
             </div>
           </div>
         `;
@@ -208,25 +210,15 @@ $(document).ready(function () {
 
         html += div;
       });
-      $("#postList").append(html);
-      // Agregar escucha a todos los botones edit
-      var btnsEdit = document.querySelectorAll(".btn-edit-post");
-      btnsEdit.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          var id = e.target.dataset.id;
-          // le paso el identificador a una funcion para actualizar dicho documento
-          obtienePost(id);
-        });
-      });
-      // Agregar escucha a todos los botones delete
-      var btnsDelete = document.querySelectorAll(".btn-delete-post");
-      btnsDelete.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          var id = e.target.dataset.id;
-          // le paso el identificador a una funcion para eliminar dicho documento
-          deletePost(id);
-        });
-      });
+      $("#post").append(html);
+
     }
+  }
+
+  function obtenerDatos() {
+    db.collection("posteos").get().then((querySnapshot) => {
+      mostrarDatos(querySnapshot.docs);
+    });
+    
   }
 });
