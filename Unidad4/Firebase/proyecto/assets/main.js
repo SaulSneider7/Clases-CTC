@@ -242,7 +242,7 @@ $(document).ready(function () {
       html = `
         <div>
             <div>
-                <img id="userPhoto" src="${fotoURL}" style="width: 100px;">
+                <img id="userPhoto" src="${fotoURL}">
             </div>
             <div>
                 <h3>${displayName}</h3>
