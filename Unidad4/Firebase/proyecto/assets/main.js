@@ -40,7 +40,7 @@ $(document).ready(function () {
         var user = userCredential.user;
         // ...
         console.log("se creo tu cuenta correctamente");
-       
+
         //usamos la funcion creada para guardar el nombre
         addNombre(nombre);
       })
@@ -124,8 +124,9 @@ $(document).ready(function () {
       // console.log(email," - ", usuario," - ", uid);
       // console.log(user);
       console.log(email, " - ", usuario);
-      obtenerDatos()
-      
+      obtenerDatos();
+      infoUser();
+
       // ...
     } else {
       // User is signed out
@@ -169,7 +170,7 @@ $(document).ready(function () {
       })
       .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
-        window.location.reload(); //recarga pag
+        window.location.reload(); //recarga pag <-
       })
       .catch((error) => {
         console.error("Error adding document: ", error);
@@ -184,7 +185,7 @@ $(document).ready(function () {
       let html = "";
       data.forEach((doc) => {
         var post = doc.data();
-        console.log("post - ",post);
+        console.log("post - ", post);
         var div = ``;
         if (user.uid == post._idUser) {
           div = `
@@ -192,12 +193,6 @@ $(document).ready(function () {
             <div class="card-body">
               <p>${post._publicacion}</p>
               <p>Publicado por ${post._nombreUser}</p>
-              <button data-id="${doc._idUser}">
-                Editar
-              </button>
-              <button data-id="${doc._idUser}">
-                Eliminar
-              </button>
             </div>
           </div>
         `;
@@ -215,21 +210,48 @@ $(document).ready(function () {
         html += div;
       });
       $("#post").append(html);
-
     }
   }
 
   function obtenerDatos() {
-    db.collection("posteos").get().then((querySnapshot) => {
-      mostrarDatos(querySnapshot.docs);
-    });
+    db.collection("posteos")
+      .get()
+      .then((querySnapshot) => {
+        mostrarDatos(querySnapshot.docs);
+      });
   }
 
-  function actualizarDato(id) {
-    db.collection("posteos").doc(id).get().then((doc)=>{
-      //Si exite el post se mostara en el form
-      let post = doc.data();
+  function infoUser() {
 
-    });
+    const user = firebase.auth().currentUser;
+    console.log("infouser", user);
+    var html = "";
+
+    if (user !== null) {
+      var displayName = user.displayName;
+      var email = user.email;
+      var fotoURL = "";
+
+      if (user.photoURL != null) {
+        fotoURL = user.photoURL;
+      } else {
+        fotoURL = "img/userdefault.png";
+      }
+
+      html = `
+        <div>
+            <div>
+                <img id="userPhoto" src="${fotoURL}">
+            </div>
+            <div>
+                <h3>${displayName}</h3>
+                <h4>${email}</h4>
+            </div>
+        </div>
+      `;
+      $("#userInfo").append(html);
+    } else {
+      console.log("error SOS");
+    }
   }
 });
