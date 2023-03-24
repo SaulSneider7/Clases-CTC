@@ -221,10 +221,11 @@ $(document).ready(function () {
       });
   }
 
+  // MOSTRAR INFORMACION DEL USUARIO
   function infoUser() {
 
     const user = firebase.auth().currentUser;
-    console.log("infouser", user);
+    console.log("HOLA MUNDO", user);
     var html = "";
 
     if (user !== null) {
@@ -241,7 +242,7 @@ $(document).ready(function () {
       html = `
         <div>
             <div>
-                <img id="userPhoto" src="${fotoURL}">
+                <img id="userPhoto" src="${fotoURL}" style="width: 100px;">
             </div>
             <div>
                 <h3>${displayName}</h3>
